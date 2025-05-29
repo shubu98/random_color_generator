@@ -19,17 +19,18 @@ body{
     height: 80%;
     background-color: rgb(189, 211, 230);
 }
-/* .cards{
+.cards{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    margin-left: 100px;
+    flex-direction: column;
+    gap: 30px;
+    /* margin-left: 100px;
     margin-right: 100px;
     width: 30%;
     height: 30%;
-    background-color: aliceblue;
-} */
+    background-color: aliceblue; */
+}
 
 .btn{
     padding: 12px 30px;
@@ -42,4 +43,11 @@ body{
     opacity: .7;
     cursor: pointer;
     color: white;
+}
+
+@media (min-width : 720px){
+    .cards{
+        /* display: flex; */
+        flex-direction: row;
+    }
 }
